@@ -12,8 +12,8 @@ const todoSchema = new mongoose.Schema({
     priority: {
         type: String,
         required: true,
-        enum: ["High", "Low", "Regular"],
-        default: "Regular"
+        enum: ["High", "Low", "Intermediate"],
+        default: "Intermediate"
     },
     status: {
         type: String,
@@ -22,7 +22,7 @@ const todoSchema = new mongoose.Schema({
         default: "Pending"
     },
     dueDate: {
-        type: Date,
+        type: String,
         required: true
     }
 });

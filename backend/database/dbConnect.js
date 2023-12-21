@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const password = encodeURIComponent("<MamoonAmjad1>");
+
 const connectDb = async () => {
     try {
       mongoose.set('strictQuery',false).connect("mongodb://localhost:27017/TODO")
